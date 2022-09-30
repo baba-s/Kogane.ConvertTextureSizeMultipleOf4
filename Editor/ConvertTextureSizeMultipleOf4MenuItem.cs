@@ -10,13 +10,13 @@ namespace Kogane.Internal
     {
         private const string MENU_ITEM_NAME = "Assets/Kogane/Convert Texture Size Multiple Of 4";
 
-        [MenuItem( MENU_ITEM_NAME, true, 1154515621 )]
+        [MenuItem( MENU_ITEM_NAME, true )]
         private static bool CanConvert()
         {
             return Selection.objects.OfType<Texture2D>().Any();
         }
 
-        [MenuItem( MENU_ITEM_NAME, false )]
+        [MenuItem( MENU_ITEM_NAME, false, 1155415621 )]
         private static void Convert()
         {
             if ( !EditorUtility.DisplayDialog( "", "選択中のすべてのテクスチャのサイズを 4 の倍数に変換しますか？", "はい", "いいえ" ) ) return;
