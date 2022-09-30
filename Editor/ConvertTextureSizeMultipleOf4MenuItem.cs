@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Kogane.Internal
 {
-    internal static class ConvertTextureSizeMultipleOf4
+    internal static class ConvertTextureSizeMultipleOf4MenuItem
     {
         private const string MENU_ITEM_NAME = "Assets/Kogane/Convert Texture Size Multiple Of 4";
 
